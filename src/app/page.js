@@ -1,7 +1,7 @@
-import Image from "next/image";
+import App from "./App.jsx";
 
 export default function Home() {
   return (
-  <div>test</div>
+  <div><App/></div>
   );
 }
