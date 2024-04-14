@@ -1,26 +1,26 @@
 "use client"
 import React, {useState, useEffect} from 'react';
-import axios from "axios";
+
+import Dashboard from './components/Dashboard';
+// import LogIn from '@/components/UserAccountComponents/LogIn';
 
 const App = () => {
-    const [cars, setCars] = useState([])
+    const [loggedIn, setLoggedIn] = useState(false);
 
-    useEffect(() => {
-        axios
-            .get("https://rsproject01-car-data.vercel.app/cars")
-            .then((response) => {
-                setCars(response.data);
-            })
-    }, []);
-        
-    console.log(cars);
-
-
-  return (
-    <div>
-        
-    </div>
-  )
+    // if (loggedIn == false) {
+    //     return <LogIn
+    //         loggedIn={loggedIn}
+    //         setLoggedIn={setLoggedIn}
+    //     />
+    //   } else {
+        return (
+          <Dashboard
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
+           
+          />
+        )
+    //   }
 }
 
 export default App
