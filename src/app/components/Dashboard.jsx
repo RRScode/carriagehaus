@@ -4,7 +4,7 @@ import axios from 'axios';
 import CarsTable from "./CarTableComponents/CarsTable";
 // import PieChartMakes from '@/components/PieChartComponents/PieChartMakes';
 // import { BarPlotColor } from '@/components/BarPlotComponents/BarPlotColor';
-// import LogoutTwoToneIcon from '@mui/icons-material/LogoutTwoTone';
+import LogoutTwoToneIcon from '@mui/icons-material/LogoutTwoTone';
 
 
 const Dashboard = ({loggedIn, setLoggedIn}) => {
@@ -27,11 +27,11 @@ const Dashboard = ({loggedIn, setLoggedIn}) => {
                 justifyContent: "space-between",
                 }}>
                 <h1>Carriage Haus</h1>
-                {/* <div style={{padding:"15px", display:"flex", alignItems:"center"}} onClick={() => { setLoggedIn(false) }}>
+                <div style={{padding:"15px", display:"flex", alignItems:"center"}} onClick={() => { setLoggedIn(false) }}>
                     <p style={{cursor:"pointer"}}>Log Out </p>
                     <LogoutTwoToneIcon style={{cursor:"pointer", padding:"5px"}}
                         ></LogoutTwoToneIcon>
-                </div> */}
+                </div>
 
             </div>
 
