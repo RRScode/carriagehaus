@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CarsTable from "./CarTableComponents/CarsTable";
-// import PieChartMakes from '@/components/PieChartComponents/PieChartMakes';
-// import { BarPlotColor } from '@/components/BarPlotComponents/BarPlotColor';
+import PieChartMakes from './PieChartComponents/PieChartMakes';
+import { BarPlotColor } from './BarPlotComponents/BarPlotColor';
 import LogoutTwoToneIcon from '@mui/icons-material/LogoutTwoTone';
 
 
@@ -35,7 +35,7 @@ const Dashboard = ({loggedIn, setLoggedIn}) => {
 
             </div>
 
-            {/* <div style={{
+            <div style={{
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "space-evenly"}}>
@@ -53,7 +53,7 @@ const Dashboard = ({loggedIn, setLoggedIn}) => {
                     outerRadius={100}
                 /> 
 
-            </div> */}
+            </div>
 
 
             <CarsTable
