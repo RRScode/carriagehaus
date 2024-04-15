@@ -34,7 +34,10 @@ const Dashboard = ({loggedIn, setLoggedIn}) => {
                 </div>
 
             </div>
-
+            
+            <h3>Total Number of Vehicles: {cars.length}</h3>
+            
+            
             <div style={{
                 display: "flex",
                 flexWrap: "wrap",
